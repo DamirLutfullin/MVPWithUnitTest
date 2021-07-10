@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import MVP_Level_One
+@testable import MVPWithUnitTest
 
 class MokeView: MainViewProtocol {
     func successfulDownloadOfComments() {

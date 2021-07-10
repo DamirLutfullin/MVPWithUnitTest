@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol DetailViewProtocol: class {
+protocol DetailViewProtocol: AnyObject {
     var detailPresenter: DetailPresenterProtocol! {get set}
     func setComment(comment: Comment?)
 }
 
-protocol DetailPresenterProtocol: class {
+protocol DetailPresenterProtocol: AnyObject {
     var comment: Comment? {get}
     init(view: DetailViewProtocol, router: RouterProtocol, comment: Comment?)
     func setDetailComment()

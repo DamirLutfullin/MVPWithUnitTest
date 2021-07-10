@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol MainViewProtocol: class {
+protocol MainViewProtocol: AnyObject {
     func successfulDownloadOfComments()
     func failedToDownloadComments(error: Error)
 }
 
-protocol MainViewPresenterProtocol: class {
+protocol MainViewPresenterProtocol: AnyObject {
     var comments: [Comment]? {get set}
     init(view: MainViewProtocol, networkService: NetworkServiceProtocol, router: RouterProtocol)
     func downloadComments()

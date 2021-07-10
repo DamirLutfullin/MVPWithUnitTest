@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol AssemblyBuilderProtocol: class {
+protocol AssemblyBuilderProtocol: AnyObject {
     func createMainModule(router: RouterProtocol) -> UIViewController
     func createDetailModule(comment: Comment?, router: RouterProtocol) -> UIViewController
 }

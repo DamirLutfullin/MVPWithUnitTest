@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol NetworkServiceProtocol: class {
+protocol NetworkServiceProtocol: AnyObject {
     func downloadComments(completion: @escaping (Result<[Comment], Error>) -> Void)
 }
 
